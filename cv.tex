@@ -1,0 +1,154 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,       % no lik border color
+   allbordercolors=white    % white border color for all
+}
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+\begin{document}
+\header{Peter Bansuk Lee }{} %{Lee}
+    {SWE | Backend | Infrastructure | Platform}
+      
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+  \section{Email}
+    \href{mailto:peterl@berkeley.edu}{\textbf{plee.ucb@gmail.com}}
+    ~
+  \section{Tel \& Skype}
+    (818) 454-3445
+    plee831
+    ~
+  \section{Address}
+    2330 Blake Street Apt 5
+    Berkeley, CA 94704
+    ~
+  \section{Websites}
+    \href{https://www.linkedin.com/in/plee831}{linkedin.com/in/leepe}
+    \href{https://github.com/plee831}{github.com/plee831}
+    ~
+  \section{Programming}
+    \textbf{Python}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{Java}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{Scala}\includegraphics[scale=0.40]{img/3stars.png}
+    \textbf{C}\includegraphics[scale=0.40]{img/3stars.png}
+    [\emph{Plus: SQL, Unix, Bash, YAML, Salt, \\ JS, CSS, HTML}]
+    ~
+   \section{Tools}
+    Vim, AWS, React, Git, Spark, Hadoop, Kafka, Hive, Maven, Flask, Jenkins
+    ~
+  \section{Strengths}
+    Ambitious, persistent, disciplined, organized, teachable, reliable
+    ~
+  \section{Ongoing Interests}
+    Avid guitarist, comics aficionado, Dodgers fan, board game lover
+    ~
+  \section{Bucket List}
+    Visit Korea \& Israel, take future children to a Dodgers game, go to a Vulfpeck concert, touch an elephant
+    ~
+\end{aside}
+
+\section{Experience}
+\begin{entrylist}
+    \entry
+    {05/17 - Now}
+    {Lyft | Software Engineer}
+    {San Francisco, CA}
+    {Performance-Frameworks}
+    \entry
+    {05/17 - 10/17}
+    {Lyft | Software Engineering Intern}
+    {San Francisco, CA}
+    {Performance-Frameworks: automated Python profiling for micro-service performance optimization. Worked on client simulations and load testing.}
+    \entry
+    {06/16 - 08/16}
+    {Pandora | Software Engineering Intern}
+    {Oakland, CA}
+    {Designed architecture for and implemented a content notification dispatcher used to relay inter-system alerts. Built API with Python-Django framework.}
+    \entry
+    {02/16 - 04/16}
+    {Amazon | Software Development Engineering Intern}
+    {Seattle, WA}
+    {Built a Scala JDK to launch AWS EMR clusters, perform mapReduce transforms using Hive scripts with Spark applications and load data to Redshift.}
+    \entry
+    {06/15 - 02/16}
+    {SA-IT | Network Engineering Assistant}
+    {Berkeley, CA}
+    {Oversaw upgrades for network equipment and conducted wireless analysis.}
+    \entry
+    {08/15 - 01/16}
+    {IEEE | Technical Operations Officer}
+    {Berkeley, CA}
+    {Performed maintenance of servers for the EECS community in the IEEE lab.}
+    \entry
+    {06/15 - 12/15}
+    {UC Berkeley: Computer Science Dept. | Lab Assistant}
+    {Berkeley, CA}
+    {Assisted students in education of Java, Python and related course material.}
+    \entry
+    {08/15 - 01/16}
+    {DeCal Board | Webmaster}
+    {Berkeley, CA}
+    {Managed the DeCal Board website using JS, RoR, CSS and HTML.}
+\end{entrylist}
+
+\section{Projects}
+\begin{entrylist}
+ \entry
+    {08/2017}
+    {Lyft Hackathon 2017: Service Checker}
+    {Python}
+    {Command line tool that allows users to check for infrastructure changes.}
+  \entry
+    {04/2017}
+    {Relational Database}
+    {Java}
+    {B+ tree model db supporting file management, multiple query operators (PNLJ, BNLJ, GraceHash, SortMerge, IndexScan) and query optimization.}
+  \entry
+    {09/2016}
+    {Wan Optimizer (Middlebox)}
+    {Python}
+    {Developed the app, which prevents re-sending the same data over WANs.}
+  \entry
+    {06/2016}
+    {Pandora Hackathon 2016: Stackd}
+    {Python}
+    {Mocked Stack Overflow for internal usage.}
+  \entry
+    {07/2015}
+    {Version Control System | Gitlet}
+    {Java}
+    {Constructed a version control system that mimics many of Git.}
+  \entry
+    {08/2015}
+    {Sliding Block Puzzles}
+    {Java}
+    {Program that solves complex block puzzle configurations through the implementation of ADT’s, priority queues and the Manhattan distance algorithm.}
+\end{entrylist}
+\section{Education}
+\begin{entrylist}
+  \entry
+    {Grad. 12/17}
+    {UC Berkeley | B.A. in Computer Science}
+    {Berkeley, CA}
+    {\emph{Coursework}: Data Structures, Computer Architecture, Computational Modeling, Algorithms, Internet Architecture \& Protocols, Database Systems, Computer Security, Structure \& Interpretation of Computer Programs, Discrete Math \& Probability Theory, Linear Algebra \& Diff Equations.\\
+    \emph{Intending}: Operating Systems, Personal Finance.}
+\end{entrylist}
+\end{document}
